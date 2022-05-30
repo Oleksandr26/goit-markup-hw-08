@@ -1,0 +1,40 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/common";
+@import "./components/container";
+@import "./components/section";
+@import "./utils/hidden.scss";
+
+@import "./layout/header";
+@import "./components/logo";
+
+@import "./layout/hero";
+
+@import "./components/our-skills-icon";
+@import "./layout/our-skills";
+
+@import "./layout/job";
+@import "./components/job-list";
+
+@import "./layout/team";
+@import "./components/team-list";
+@import "./components/team-subtitle";
+@import "./components/team-social";
+
+@import "./layout/clients";
+@import "./components/clients-list";
+
+@import "./layout/footer";
+@import "./components/join-list";
+
+
+@import "./layout/modal";
+@import "./components/modal-close-btn";
+@import "./layout/form";
+@import "./components/modal-input";
+@import "./components/checkbox";
+@import "./components/modal-btn";
+
+@import "./layout/portfolio";
+@import "./components/portfolio-btn";
+@import "./components/portfolio-card";

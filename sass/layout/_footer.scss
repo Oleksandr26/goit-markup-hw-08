@@ -1,0 +1,113 @@
+.footer {
+    background-color: var(--footer-bg-color);
+}
+.footer__logo {
+    margin-right: 0;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    display: block;
+
+    color: var(--white-text-color);
+}
+
+.address__list{
+    padding-bottom: 60px;
+}
+.address__item:not(:last-child){
+margin-bottom: 9px;
+}
+
+.address__link {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--white-text-color);
+
+}
+
+.address__communication {
+    font-style: normal;
+    color: var(--footer-contact-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__container{
+    display: flex;
+}
+
+
+
+
+// Distribution
+
+.distribution{
+    display: flex;
+    align-items: flex-end;
+    
+    padding-bottom: 94px;
+    
+}
+.distribution--left{
+    margin-left: 93px;
+}
+
+.distribution__title{
+    width: 360px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.distribution__email{
+    margin-top: 20px;
+    padding-left: 16px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--footer-bg-color);
+    color: var(--white-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+
+    &::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+}
+}
+
+.distribution__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-width: 200px;
+    margin-left: 12px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: var(--accent-color);
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+.distribution__btn--icon{
+    margin-left: 10px;
+    }

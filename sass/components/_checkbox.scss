@@ -1,0 +1,37 @@
+.privacy-icon{
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .modal-check:checked + & .check-wrap{
+    background-color: var(--accent-color);
+    border: none;
+}
+    .modal-check:checked + & .privacy-icon{
+    fill: #FFFFFF;
+}
+}
+
+.check-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.agreement{
+    margin-left: 5px;
+    color: var(--accent-color);
+}
+
