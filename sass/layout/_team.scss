@@ -1,8 +1,18 @@
 .team{
-    margin: auto;
+    margin: 0 auto;
 
     background-color: var(--background-team-color);
 }
 .section-title.team{
+    margin-bottom: 30px;
+
+    font-size: 28px;
+    line-height: 1.18;
+
+    @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+    }
 }

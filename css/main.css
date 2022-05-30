@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -45,14 +47,35 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .visually-hidden {
@@ -158,8 +181,8 @@ body {
 
 .hero {
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   background-color: #C4C4C4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -168,17 +191,30 @@ body {
   background-position: center;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero-title {
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .button {
@@ -203,97 +239,175 @@ body {
   background-color: var(--white-text-color);
 }
 
-.icon {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
 .icon-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  margin-bottom: 30px;
   height: 120px;
   background-color: var(--background-team-color);
 }
 
 .about-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 }
 
-.about-list-item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .about-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list-item {
+    width: calc(25% - 30px);
+  }
 }
 
 .about-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: var(--title-text-color);
+}
+@media screen and (min-width: 768px) {
+  .about-title {
+    text-align: left;
+  }
 }
 
 .about-text {
   margin-top: 10px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about-text {
+    margin-bottom: 0;
+  }
 }
 
-.section-title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
+@media screen and (max-width: 1200px) {
+  .job {
+    display: none;
+  }
 }
 
-.job-list {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--title-text-color);
+    margin-bottom: 50px;
+  }
 }
 
-.job-list-img {
-  position: relative;
+@media screen and (min-width: 1200px) {
+  .job-list {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+  }
 }
 
-.job-list-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--white-text-color);
-  background-color: rgba(47, 48, 58, 0.8);
+@media screen and (min-width: 1200px) {
+  .job-list-img {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .job-list-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
 
 .team {
-  margin: auto;
+  margin: 0 auto;
   background-color: var(--background-team-color);
 }
 
 .section-title.team {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+}
+@media screen and (min-width: 1200px) {
+  .section-title.team {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-list {
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: -30px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 .team-list-item {
   padding-bottom: 30px;
   text-align: center;
-  width: 270px;
+  margin-bottom: 30px;
   background-color: var(--white-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .team-list-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    width: 270px;
+  }
+  .team-list-item :not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-subtitle {

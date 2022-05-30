@@ -1,12 +1,19 @@
 .job-list{
+    @media  screen and (min-width: 1200px){
     display: flex;
     justify-content: space-between;
     padding-bottom: 94px;
+    }
+    
 }
 .job-list-img{
+    @media  screen and (min-width: 1200px){
     position: relative;
+    }
+    
 }
 .job-list-description{ 
+    @media  screen and (min-width: 1200px){
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +29,6 @@
 
     color: var(--white-text-color);
     background-color: rgba(47, 48, 58, 0.8);
+    }
+    
 }

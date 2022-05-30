@@ -1,7 +1,17 @@
+.job{
+    @media  screen and (max-width: 1200px) {
+    display: none;        
+    }
+}
+
 .section-title{
+    @media  screen and (min-width: 1200px){
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     color: var(--title-text-color);
     margin-bottom: 50px;
+    }
+    
+    
 }
