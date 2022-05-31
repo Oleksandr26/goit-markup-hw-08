@@ -1,10 +1,14 @@
 .clients-title {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     color: #212121;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
 }
 
 .clients-link{
@@ -12,6 +16,6 @@
     justify-content: center;
     align-items: center;
     
-    width: 170px;
-    height: 92px;
+    
+    
 }

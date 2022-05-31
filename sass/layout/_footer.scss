@@ -10,11 +10,32 @@
     color: var(--white-text-color);
 }
 
+    .address__container{
+        text-align: center;
+        @media screen and (min-width: 768px){
+            // margin-right: 165px;
+            // padding-left: 76px;
+            // margin-bottom: 60px;
+        }
+        @media screen and (min-width: 1200px){
+            text-align: left;
+        }
+    }
+
+    @media screen and (min-width: 768px){
+    .tabl__conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}        
+}
+
 .address__list{
     padding-bottom: 60px;
+    
 }
 .address__item:not(:last-child){
-margin-bottom: 9px;
+margin-bottom: 8px;
 }
 
 .address__link {
@@ -32,7 +53,10 @@ margin-bottom: 9px;
 }
 
 .footer__container{
+    @media screen and (min-width: 1200px){
     display: flex;
+    justify-content: space-between;
+    }
 }
 
 
@@ -41,18 +65,32 @@ margin-bottom: 9px;
 // Distribution
 
 .distribution{
+    padding-bottom: 60px;
+    @media screen and (min-width: 768px){
+    margin: 0 auto;
+    width: 450px;
+}
+@media screen and (min-width: 1200px){
     display: flex;
     align-items: flex-end;
-    
+    margin: 0;
     padding-bottom: 94px;
-    
+    min-width: 580px;
 }
+}
+    
+
 .distribution--left{
-    margin-left: 93px;
+    @media screen and (min-width: 1200px){
+        margin-left: 93px;
+        padding-bottom: 94px;
+        
+    }
+    
 }
 
 .distribution__title{
-    width: 360px;
+    text-align: center;
     font-weight: 700;
     text-transform: uppercase;
 
@@ -61,6 +99,7 @@ margin-bottom: 9px;
 
 .distribution__email{
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-left: 16px;
 
     font-weight: 400;
@@ -87,6 +126,10 @@ margin-bottom: 9px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.6);
 }
+    @media screen and (min-width: 1200px){
+        margin-bottom: 0;
+}
+    
 }
 
 .distribution__btn{
@@ -95,11 +138,14 @@ margin-bottom: 9px;
     justify-content: center;
     padding: 10px;
     min-width: 200px;
-    margin-left: 12px;
+    @media screen and (min-width: 1200px){
+        margin-left: 12px;
+    }
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    margin: 0 auto;
     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
