@@ -1,9 +1,14 @@
 .btn__list{
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-}
-.card-list{
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    @media screen and (min-width: 768px){
+        justify-content: center;
+    }
+    
+}
+.card-list{
+    // display: flex;
+    // flex-wrap: wrap;
 }
