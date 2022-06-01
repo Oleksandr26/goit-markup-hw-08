@@ -1,0 +1,46 @@
+.menu__btn{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+    & .icon-close{
+    display: none;
+}
+    &.is-open .icon-close{
+    display: block;
+}
+    &.is-open .icon-menu{
+    display: none;
+}
+    &:focus{
+        fill: var(--accent-color);
+    }
+}
+
+
+
+.menu__conteiner{
+    // min-height: 581px;
+    background-color: #FFFFFF;
+    @media screen and (min-width: 768px){
+        display: flex;
+        align-items: center;
+    }
+    
+
+    &.is-open{
+        display: block;
+    }
+    @media screen and (max-width: 767px){
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 48px 40px;
+        width: 100%;
+    }
+}

@@ -7,6 +7,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+
+    font-size: 12px;
+    line-height: 1.16;
+        @media screen and (min-width: 480px){
+    white-space: nowrap;    
+}
 
     .modal-check:checked + & .check-wrap{
     background-color: var(--accent-color);
@@ -33,5 +40,7 @@
 .agreement{
     margin-left: 5px;
     color: var(--accent-color);
-}
 
+    font-size: 12px;
+    line-height: 1.17;
+}
