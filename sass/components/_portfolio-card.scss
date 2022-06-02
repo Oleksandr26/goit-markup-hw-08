@@ -1,22 +1,17 @@
 .card__item{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:not(:last-child){
     margin-bottom: 30px;
-    width: 370px;
-    &:last-child{
-        margin-bottom: 60px;
     }
-        &:hover,
+    
+    &:hover,
     &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-    // width: calc((100% - 60px) / 3);
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-
-//     &:nth-child(3n){
-//     margin-right: 0px;
-// }
-
+@media screen and (min-width: 1200px){
+    &:nth-child(n + 7){
+    margin-bottom: 0; }   
+}
 }
 
 .card__wrap{
@@ -29,7 +24,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 63px 24px;
 
@@ -44,9 +39,8 @@
 }
 
 .card__text{
-    // 370px
     width: 100%;  
-    padding: 20px 22px;
+    padding: 20px 18px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
